@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-4 col-md-6 col-sm-6 col-xs-12 mycard" *ngFor =  "let obj of data | slice:0:24">
+        <div class="card">
+          <img class="card-img-top" src="{{ obj['url'] }}" >
+          <div class="card-body">
+            <h4 class="card-title" style="height:20px;">{{obj['title']}}</h4>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
